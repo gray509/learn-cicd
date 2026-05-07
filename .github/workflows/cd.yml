@@ -1,4 +1,4 @@
-name : cd
+name: cd
 
 on:
   push:
@@ -6,10 +6,10 @@ on:
 
 jobs:
   deploy:
-    - name: Deploy
-      runs-on: ubuntu-latest
+    name: Deploy
+    runs-on: ubuntu-latest
 
-    - steps:
+    steps:
       - name: Check out code
         uses: actions/checkout@v4
 
